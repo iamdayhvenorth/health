@@ -15,7 +15,10 @@ const Services = () => {
             {/* temporary styling */}
             <div className="services-row  grid md:grid-cols-3 gap-4">
               {[...Array(3)].map((_, idx) => (
-                <div className="col shadow-[0px_5px_25px_-2px_rgba(0,0,0,0.06)]">
+                <div
+                  key={idx}
+                  className="col shadow-[0px_5px_25px_-2px_rgba(0,0,0,0.06)]"
+                >
                   <div>
                     <img
                       src="https://media.istockphoto.com/id/2178146294/photo/health-engineer-bioprinting-models-at-a-3d-laboratory.webp?a=1&b=1&s=612x612&w=0&k=20&c=0q5ooPcY5hx1UVZwPQnHsF2WuvHF5z7IfcB9EulVCOk="
@@ -40,6 +43,7 @@ const Services = () => {
             <div className="mt-12 flex justify-center gap-x-2">
               {[...Array(3)].map((_, idx) => (
                 <span
+                  key={idx}
                   className={`w-4 h-4 rounded-full block  ${
                     idx === 0 ? "bg-black/40 scale-100" : "bg-gray-200"
                   }`}
