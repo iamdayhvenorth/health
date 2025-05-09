@@ -27,7 +27,7 @@ const Testimonial = () => {
   return (
     <section>
       <div className="box-container py-20">
-        <div>
+        <div className="w-full">
           <motion.div
             variants={itemVariants}
             initial="hidden"
@@ -55,7 +55,7 @@ const Testimonial = () => {
               }}
               onMounted={(splide) => setSplideInstance(splide)}
               onMove={(splide) => setCurrentSlide(splide.index)}
-              className="flex w-full md:w-5xl md:h-[500px] mx-auto overflow-hidden shadow-md"
+              className="flex w-full md:max-w-5xl md:h-[500px] mx-auto overflow-hidden shadow-md"
             >
               {testimonials.map(({ id, image }) => (
                 <SplideSlide

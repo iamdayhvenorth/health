@@ -31,7 +31,7 @@ const Navbar = () => {
           </a>
         </div>
 
-        <ul className="md:flex gap-6 hidden">
+        <ul className="lg:flex gap-6 hidden">
           <li>
             <Link
               activeClass="active"
@@ -72,18 +72,34 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <a href="#" className="p-4 text-white">
-              Home
-            </a>
+            <Link
+              to="procedure"
+              activeClass="active"
+              smooth={true}
+              spy
+              offset={-50}
+              duration={500}
+              className="p-4 text-white cursor-pointer"
+            >
+              Procedure
+            </Link>
           </li>
           <li>
-            <a href="#" className="p-4 text-white">
-              Home
-            </a>
+            <Link
+              to="appointment"
+              activeClass="active"
+              smooth={true}
+              spy
+              offset={0}
+              duration={500}
+              className="p-4 text-white cursor-pointer"
+            >
+              Booking
+            </Link>
           </li>
         </ul>
 
-        <span className="block text-3xl cursor-pointer md:hidden menubar">
+        <span className="block text-3xl cursor-pointer lg:hidden menubar">
           <HiOutlineMenuAlt3 />
         </span>
       </nav>

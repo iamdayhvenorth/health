@@ -11,7 +11,7 @@ const Procedure = () => {
   };
 
   return (
-    <section>
+    <section id="procedure">
       <div className="box-container py-20">
         <motion.div
           variants={itemVariants}

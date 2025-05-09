@@ -2,7 +2,10 @@ import React from "react";
 
 const Appointment = () => {
   return (
-    <section className="bg-[url(https://preview.colorlib.com/theme/healthvest/images/bg_3.jpg.webp)] bg-cover bg-no-repeat bg-center bg-fixed">
+    <section
+      id="appointment"
+      className="bg-[url(https://preview.colorlib.com/theme/healthvest/images/bg_3.jpg.webp)] bg-cover bg-no-repeat bg-center bg-fixed"
+    >
       <div className="bg-[#36c940]/90 py-20 px-3">
         <div className="box-container">
           <div className="flex flex-col-reverse md:flex-row items-center gap-4">
